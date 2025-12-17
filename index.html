@@ -27,7 +27,7 @@
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' }, /* Movimento mais suave */
+                            '50%': { transform: 'translateY(-10px)' },
                         },
                         fadeIn: {
                             '0%': { opacity: '0', transform: 'translateY(20px)' },
@@ -45,7 +45,7 @@
 </head>
 <body class="bg-dark text-white font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-white">
 
-    <!-- Background Gradients (Mais sutis agora) -->
+    <!-- Background Gradients (Sutis) -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary/20 rounded-full blur-[128px]"></div>
         <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-600/10 rounded-full blur-[128px]"></div>
@@ -91,13 +91,13 @@
                 </div>
             </div>
             
-            <!-- Hero Image Atualizada: Natural & Representativa -->
+            <!-- Hero Image: Foco em Naturalidade e Representatividade -->
             <div class="relative animate-float hidden md:block">
                 <div class="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/20 rotate-2 hover:rotate-0 transition-all duration-500">
                     <img src="assets/images/student-hero-natural.jpg" 
-                         alt="Estudante focado" 
+                         alt="Estudante Criativo" 
                          class="w-full h-auto object-cover" 
-                         data-prompt="portrait of a young Black male student sitting at a wooden desk in a bright library, working on a laptop, natural sunlight coming through window, wearing casual hoodie and glasses, focused expression, high quality photography, 8k, depth of field" 
+                         data-prompt="medium shot of a friendly Black university student holding a laptop and notebooks, standing in a modern university library with large windows, natural sunlight, wearing a casual hoodie, smiling confidently, blurred background of bookshelves, realistic photography, 8k, high quality" 
                          data-aspect-ratio="4:5">
                 </div>
             </div>
@@ -140,14 +140,12 @@
             </div>
 
             <div class="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0 space-y-12">
-                
-                <!-- Item 1 -->
+                <!-- Items da timeline mantidos -->
                 <div class="relative md:grid md:grid-cols-5 md:gap-8 items-center group">
                     <div class="hidden md:block md:col-span-2 text-right">
                         <span class="text-primary font-bold text-xl">2023 - Presente</span>
                         <h3 class="text-white font-bold mt-1">Faculdade de Tecnologia</h3>
                     </div>
-                    <!-- Dot -->
                     <div class="absolute -left-[5px] md:relative md:-left-[5px] md:col-span-1 flex justify-center">
                         <div class="w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(139,92,246,0.5)] group-hover:scale-125 transition-transform"></div>
                     </div>
@@ -157,14 +155,12 @@
                         <p class="text-gray-400 text-sm">Início da graduação. Foco em algoritmos, lógica de programação e fundamentos de TI.</p>
                     </div>
                 </div>
-
-                <!-- Item 2 -->
+                
                 <div class="relative md:grid md:grid-cols-5 md:gap-8 items-center group">
                     <div class="hidden md:block md:col-span-2 text-right">
                         <span class="text-primary font-bold text-xl">2022</span>
                         <h3 class="text-white font-bold mt-1">Primeiro "Hello World"</h3>
                     </div>
-                    <!-- Dot -->
                     <div class="absolute -left-[5px] md:relative md:-left-[5px] md:col-span-1 flex justify-center">
                         <div class="w-3 h-3 rounded-full bg-gray-600 group-hover:bg-primary transition-colors"></div>
                     </div>
@@ -175,13 +171,11 @@
                     </div>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="relative md:grid md:grid-cols-5 md:gap-8 items-center group">
                     <div class="hidden md:block md:col-span-2 text-right">
                         <span class="text-primary font-bold text-xl">Futuro</span>
                         <h3 class="text-white font-bold mt-1">Próximos Passos</h3>
                     </div>
-                    <!-- Dot -->
                     <div class="absolute -left-[5px] md:relative md:-left-[5px] md:col-span-1 flex justify-center">
                         <div class="w-3 h-3 rounded-full bg-gray-600 border border-dashed border-gray-400"></div>
                     </div>
@@ -189,7 +183,6 @@
                         <p class="text-gray-400 text-sm">Buscando estágio em desenvolvimento Frontend e aprofundamento em React/Vue.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -205,14 +198,10 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: Web Design (Natural Photo) -->
+                <!-- Project 1 -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-1-natural.jpg" 
-                             alt="Projeto Web" 
-                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                             data-prompt="over the shoulder shot of a Black person using a laptop showing a modern website design, sitting in a coffee shop, realistic, natural light, 4k, photorealistic" 
-                             data-aspect-ratio="16:9">
+                        <img src="assets/images/project-1-natural.jpg" alt="Projeto Web" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="over the shoulder shot of a Black person using a laptop showing a modern website design, sitting in a coffee shop, realistic, natural light, 4k, photorealistic" data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>
@@ -224,14 +213,10 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Mobile App (Natural Hand) -->
+                <!-- Project 2 -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-2-natural.jpg" 
-                             alt="App" 
-                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                             data-prompt="hand of a Black person holding a smartphone showing a mobile app interface, blurred city background, outdoor natural light, realistic photography, high resolution" 
-                             data-aspect-ratio="16:9">
+                        <img src="assets/images/project-2-natural.jpg" alt="App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="hand of a Black person holding a smartphone showing a mobile app interface, blurred city background, outdoor natural light, realistic photography, high resolution" data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>
@@ -243,14 +228,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Data/Study (Natural Person) -->
+                <!-- Project 3 -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-3-natural.jpg" 
-                             alt="Python" 
-                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
-                             data-prompt="young Black woman looking at a computer monitor showing python code and data graphs, office environment, collaboration, realistic photography, professional look" 
-                             data-aspect-ratio="16:9">
+                        <img src="assets/images/project-3-natural.jpg" alt="Python" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="young Black woman looking at a computer monitor showing python code and data graphs, office environment, collaboration, realistic photography, professional look" data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>

@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#8b5cf6',      /* Electric Violet Confirmado */
+                        primary: '#8b5cf6',      /* Electric Violet */
                         secondary: '#a78bfa',    /* Violeta Suave */
                         dark: '#0f172a',         /* Slate 900 */
                         surface: 'rgba(30, 41, 59, 0.7)', 
@@ -27,7 +27,7 @@
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
+                            '50%': { transform: 'translateY(-10px)' }, /* Movimento mais suave */
                         },
                         fadeIn: {
                             '0%': { opacity: '0', transform: 'translateY(20px)' },
@@ -45,10 +45,10 @@
 </head>
 <body class="bg-dark text-white font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-white">
 
-    <!-- Background Gradients -->
+    <!-- Background Gradients (Mais sutis agora) -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary/30 rounded-full blur-[128px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-600/20 rounded-full blur-[128px]"></div>
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary/20 rounded-full blur-[128px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-600/10 rounded-full blur-[128px]"></div>
     </div>
 
     <!-- Navbar -->
@@ -90,9 +90,15 @@
                     <a href="#about" class="px-8 py-3 border border-white/20 rounded-full font-bold hover:bg-white/10 transition-all backdrop-blur-sm">Sobre Mim</a>
                 </div>
             </div>
+            
+            <!-- Hero Image Atualizada: Natural & Representativa -->
             <div class="relative animate-float hidden md:block">
-                <div class="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/20 rotate-3 hover:rotate-0 transition-all duration-500">
-                    <img src="assets/images/student-hero.jpg" alt="Estudante" class="w-full h-auto object-cover" data-prompt="cinematic portrait of a cool young student sitting in a modern futuristic cafe with a laptop, neon lights reflection, wearing a hoodie, focus, 8k, photorealistic" data-aspect-ratio="4:5">
+                <div class="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/20 rotate-2 hover:rotate-0 transition-all duration-500">
+                    <img src="assets/images/student-hero-natural.jpg" 
+                         alt="Estudante focado" 
+                         class="w-full h-auto object-cover" 
+                         data-prompt="portrait of a young Black male student sitting at a wooden desk in a bright library, working on a laptop, natural sunlight coming through window, wearing casual hoodie and glasses, focused expression, high quality photography, 8k, depth of field" 
+                         data-aspect-ratio="4:5">
                 </div>
             </div>
         </div>
@@ -125,7 +131,7 @@
         </div>
     </section>
 
-    <!-- NOVA SEÇÃO: Timeline / Jornada -->
+    <!-- Timeline / Jornada -->
     <section id="journey" class="py-24 bg-black/20 relative">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -199,10 +205,14 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+                <!-- Project 1: Web Design (Natural Photo) -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-1.jpg" alt="Projeto Web" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="modern dashboard ui design on laptop screen, dark mode, analytics, clean interface, high quality" data-aspect-ratio="16:9">
+                        <img src="assets/images/project-1-natural.jpg" 
+                             alt="Projeto Web" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                             data-prompt="over the shoulder shot of a Black person using a laptop showing a modern website design, sitting in a coffee shop, realistic, natural light, 4k, photorealistic" 
+                             data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>
@@ -213,10 +223,15 @@
                         <p class="text-gray-400 text-sm mb-4">Projeto final da disciplina de Web Design.</p>
                     </div>
                 </div>
-                <!-- Project 2 -->
+
+                <!-- Project 2: Mobile App (Natural Hand) -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-2.jpg" alt="App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="mobile app interface mockup, 3 phones, isometric view, colorful gradient" data-aspect-ratio="16:9">
+                        <img src="assets/images/project-2-natural.jpg" 
+                             alt="App" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                             data-prompt="hand of a Black person holding a smartphone showing a mobile app interface, blurred city background, outdoor natural light, realistic photography, high resolution" 
+                             data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>
@@ -227,10 +242,15 @@
                         <p class="text-gray-400 text-sm mb-4">App simples de produtividade feito com JS puro.</p>
                     </div>
                 </div>
-                <!-- Project 3 -->
+
+                <!-- Project 3: Data/Study (Natural Person) -->
                 <div class="group rounded-2xl overflow-hidden bg-surface border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-2">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="assets/images/project-3.jpg" alt="Python" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-prompt="python code on monitor, matrix style background, data visualization graphs" data-aspect-ratio="16:9">
+                        <img src="assets/images/project-3-natural.jpg" 
+                             alt="Python" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                             data-prompt="young Black woman looking at a computer monitor showing python code and data graphs, office environment, collaboration, realistic photography, professional look" 
+                             data-aspect-ratio="16:9">
                         <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <button class="w-10 h-10 bg-white rounded-full text-dark flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i class="fas fa-link"></i></button>
                         </div>
